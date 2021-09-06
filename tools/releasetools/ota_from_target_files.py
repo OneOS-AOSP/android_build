@@ -827,13 +827,23 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   build_date = target_info.GetBuildProp("ro.one.build.date")
   security_patch = target_info.GetBuildProp("ro.build.version.security_patch")
   device = target_info.GetBuildProp("ro.one.device")
-
+  script.Print("----------------------------------------------");
+  script.Print("     ____                    ____     _____   ");
+  script.Print("    / __ \                  / __ \   / ____|  ");
+  script.Print("   | |  | |  _ __     ___  | |  | | | (___    ");
+  script.Print("   | |  | | | '_ \   / _ \ | |  | |  \___ \   ");
+  script.Print("   | |__| | | | | | |  __/ | |__| |  ____) |  ");
+  script.Print("    \____/  |_| |_|  \___|  \____/  |_____/   ");
+  script.Print("----------------------------------------------");
+  script.Print("--------Website: aosp.revtechs.me-------------");
+  script.Print("-------Paypal: paypal.me/badwolfalfa----------");
   script.Print("----------------------------------------------");
   script.Print(" Android version: %s"%(android_version));
   script.Print(" Build id: %s"%(build_id));
   script.Print(" Build date: %s"%(build_date));
   script.Print(" Security patch: %s"%(security_patch));
   script.Print(" Device: %s"%(device));
+  script.Print(" Development: ONE Team");
   script.Print("----------------------------------------------");
   device_specific.FullOTA_InstallBegin()
 
